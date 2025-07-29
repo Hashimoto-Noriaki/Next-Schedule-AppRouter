@@ -1,3 +1,6 @@
+
+import PrimaryBtn  from '../../components/atoms/PrimaryBtn'
+
 export function TopPage(){
     return(
         <div className="relative">
@@ -21,9 +24,9 @@ export function TopPage(){
                     <p className="pt-[30px] font-bold text-3xl">また、スケジュールをカレンダー形式で表示することができます。</p>
                 </div>
                 <div className="pt-[20vh]">
-                    <button className="bg-emerald-600 px-12 py-5 rounded-full text-white w-[400px] shadow-lg  hover:bg-emerald-400 transition">
+                    <PrimaryBtn>
                         ログイン
-                    </button>
+                    </PrimaryBtn>
                 </div>
             </main>
         </div>
