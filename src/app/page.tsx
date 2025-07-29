@@ -1,9 +1,7 @@
-import React from 'react'
+import { TopPage } from '../components/pages/TopPage'
 
-export default function page() {
+export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="text-3xl font-bold text-lime-500">トップページ</h1>
-    </div>
+    <TopPage/>
   )
 }
