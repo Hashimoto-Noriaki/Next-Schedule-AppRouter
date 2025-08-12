@@ -1,5 +1,7 @@
+
 import { NotLoginLayout }  from '../../components/templates/NotLoginLayout'
 import LoginButton  from '../../components/atoms/LoginButton'
+
 
 export function TopPage(){
     return(
@@ -11,7 +13,7 @@ export function TopPage(){
                 <p className="pt-[30px] font-bold text-3xl">また、スケジュールをカレンダー形式で表示することができます。</p>
             </div>
             <div className="pt-[20vh]">
-                <LoginButton onClick= {() => null}>
+                <LoginButton href="/">
                     ログイン
                 </LoginButton>
             </div>
