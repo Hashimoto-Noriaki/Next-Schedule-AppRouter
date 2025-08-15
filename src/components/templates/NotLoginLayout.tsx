@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from 'react'
 
 type PropsType = {
@@ -14,7 +15,9 @@ export function NotLoginLayout({children}:PropsType){
                         <ul className="flex gap-5 font-bold text-sky-400">
                             <li className="hover:text-sky-700 hover:underline transition">利用説明</li>
                             <li className="hover:text-sky-700 hover:underline transition">新規登録</li>
-                            <li className="hover:text-sky-700 hover:underline transition">ログイン</li>
+                            <li className="hover:text-sky-700 hover:underline transition">
+                                <Link href="/login">ログイン</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
