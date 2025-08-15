@@ -1,32 +1,52 @@
 export default function LoginPage() {
   return (
-    <div className="bg-gradient-to-r from-sky-300 to-sky-400 h-screen flex items-center justify-center">
-      <div className="w-[800px] p-15 bg-white rounded-lg shadow-lg flex flex-col items-center gap-6">
-        <h1 className="font-bold text-4xl text-sky-400 text-center">ログイン</h1>
-        <form className="w-full flex flex-col items-center gap-4">
-            <div className="w-[100%]">
-                <label className="font-bold text-gray-700">メールアドレス</label>
-                <input
-                    type="email"
-                    className="border-4 border-sky-300 font-bold px-3 py-5 w-full rounded-md"
-                    placeholder="メールアドレス"
-                    />
-            </div>
-            <div className="w-[100%] mt-5">
-                <label className="font-bold text-gray-700">パスワード</label>
-                <input
-                    type="password"
-                    className="border-4 border-sky-300 px-3 py-5 w-full rounded-md"
-                    placeholder="パスワード"
-                />
-            </div>
-            <div className="w-[80%] mt-5">
+    <div className="min-h-screen bg-gradient-to-r from-sky-300 to-sky-400 flex items-center justify-center px-4">
+      <div className="w-full max-w-xl bg-white rounded-2xl shadow-xl p-10">
+        <h1 className="text-center text-4xl font-bold text-sky-500">ログイン</h1>
+
+        <form className="mt-8 space-y-6" noValidate>
+          {/* Email */}
+          <div>
+            <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-1">
+              メールアドレス
+            </label>
+            <input
+              id="email"
+              type="email"
+              required
+              autoComplete="email"
+              placeholder="メールアドレス"
+              className="block w-full rounded-lg border border-sky-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none
+                         focus:border-sky-500 focus:ring-2 focus:ring-sky-300 transition"
+            />
+          </div>
+
+          {/* Password */}
+          <div>
+            <label htmlFor="password" className="block text-sm font-bold text-gray-700 mb-1">
+              パスワード
+            </label>
+            <input
+              id="password"
+              type="password"
+              required
+              autoComplete="current-password"
+              placeholder="パスワード"
+              className="block w-full rounded-lg border border-sky-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none
+                         focus:border-sky-500 focus:ring-2 focus:ring-sky-300 transition"
+            />
+          </div>
+
+          {/* Action */}
+          <div className="pt-2">
             <button
-                className="bg-emerald-600 px-12 py-5 rounded-full text-white w-full shadow-lg hover:bg-emerald-500 transition"
+              type="submit"
+              className="w-full rounded-full bg-teal-500 px-6 py-4 text-white font-semibold shadow-lg
+                         transition hover:bg-teal-600 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-teal-300"
             >
-                ログイン
+              ログイン
             </button>
-            </div>
+          </div>
         </form>
       </div>
     </div>
