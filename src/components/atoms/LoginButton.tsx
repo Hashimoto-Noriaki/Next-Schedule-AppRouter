@@ -10,7 +10,9 @@ export default function LoginButton({ href, onClick, children }: Props) {
     return (
         <Link
             href={href}
-            className="bg-emerald-600 px-12 py-5 rounded-full text-white w-[400px] shadow-lg hover:bg-emerald-400 transition"
+            type="submit"
+            className="w-full rounded-full bg-teal-500 px-12 py-5 text-white font-semibold shadow-lg
+                        transition hover:bg-teal-600 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-teal-300"
             onClick={onClick}
         >
             {children}
