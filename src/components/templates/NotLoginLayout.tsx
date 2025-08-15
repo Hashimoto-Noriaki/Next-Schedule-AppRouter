@@ -22,7 +22,7 @@ export function NotLoginLayout({children}:PropsType){
                     </nav>
                 </div>
             </header>
-            <main className="bg-gradient-to-r from-sky-400 to-sky-500 flex flex-col items-center justify-center h-screen">
+            <main className="bg-gradient-to-r from-sky-300 to-sky-400 flex flex-col items-center justify-center h-screen">
                 {children}
             </main>
         </div>
