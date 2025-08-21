@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -26,14 +26,14 @@ body {
 }
 
 .logo {
-  color          : #ffffff;
-  text-shadow    :
-  1px  1px 1px #61DAFB,
-  -1px  1px 1px #61DAFB,
-  1px -1px 1px #61DAFB,
-  -1px -1px 1px #61DAFB,
-  1px  0px 1px #61DAFB,
-  0px  1px 1px #61DAFB,
-  -1px  0px 1px #61DAFB,
-  0px -1px 1px #61DAFB;
+  color: #ffffff;
+  text-shadow:
+    1px 1px 1px #61dafb,
+    -1px 1px 1px #61dafb,
+    1px -1px 1px #61dafb,
+    -1px -1px 1px #61dafb,
+    1px 0px 1px #61dafb,
+    0px 1px 1px #61dafb,
+    -1px 0px 1px #61dafb,
+    0px -1px 1px #61dafb;
 }
