@@ -11,28 +11,27 @@ on:
       - develop
 
 jobs:
-  # この後実装
-  # lint:
-  #   name: Lint and Format Check
-  #   runs-on: ubuntu-ubuntu-latest
+  lint:
+    name: Lint and Format Check
+    runs-on: ubuntu-ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Set up Node.js
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-  #     - name: Install dependencies
-  #       run: npm install
+      - name: Install dependencies
+        run: npm install
 
-  #     - name: Run ESLint
-  #       run: npm run lint
+      - name: Run ESLint
+        run: npm run lint
 
-  #     - name: Run Prettier
-  #       run: npm run format
+      - name: Run Prettier
+        run: npm run format
 
   test:
     name: Run Tests
