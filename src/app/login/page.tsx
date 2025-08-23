@@ -1,3 +1,5 @@
+import InputForm  from '../../components/atoms/InputForm'
+
 export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-sky-300 to-sky-400 flex items-center justify-center px-4">
@@ -13,13 +15,11 @@ export default function LoginPage() {
             >
               メールアドレス
             </label>
-            <input
+            <InputForm
               type="email"
               required
               autoComplete="email"
               placeholder="メールアドレス"
-              className="block w-full rounded-lg border border-sky-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none 
-                        focus:border-sky-500 focus:ring-2 focus:ring-sky-300 transition"
             />
           </div>
 
@@ -31,13 +31,11 @@ export default function LoginPage() {
             >
               パスワード
             </label>
-            <input
+            <InputForm
               name="password"
               required
               autoComplete="current-password"
               placeholder="パスワード"
-              className="block w-full rounded-lg border border-sky-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none
-                      focus:border-sky-500 focus:ring-2 focus:ring-sky-300 transition"
             />
           </div>
           <div className="pt-2">
