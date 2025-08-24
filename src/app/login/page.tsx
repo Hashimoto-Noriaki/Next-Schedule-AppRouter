@@ -1,4 +1,7 @@
+"use client"
+
 import InputForm  from '../../components/atoms/InputForm'
+import AuthButton from '../../components/atoms/AuthButton'
 
 export default function LoginPage() {
   return (
@@ -39,13 +42,9 @@ export default function LoginPage() {
             />
           </div>
           <div className="pt-2">
-            <button
-              type="submit"
-              className="w-full rounded-full bg-teal-500 px-6 py-4 text-white font-semibold shadow-lg
-                        transition hover:bg-teal-600 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-teal-300"
-            >
-              ログイン
-            </button>
+            <form>
+              <AuthButton>ログイン</AuthButton>
+            </form>
           </div>
         </form>
       </div>
