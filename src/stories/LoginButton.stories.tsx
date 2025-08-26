@@ -4,7 +4,7 @@ const meta = {
   id: 'atoms-loginbutton',
   title: 'Atoms/LoginButton',
   component: LoginButton,
-  args: { href: '/login', children: 'ログイン' },
+  args: { href: '/login', children: 'ログインはこちら' },
 } satisfies Meta<typeof LoginButton>;
 export default meta;
 type Story = StoryObj<typeof meta>;
