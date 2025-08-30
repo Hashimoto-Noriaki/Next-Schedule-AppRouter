@@ -1,12 +1,16 @@
-"use client";
-import { ReactNode } from "react";
+'use client'
+import { ReactNode } from 'react'
 
 type Props = {
-  children: ReactNode;
-  onClick?: () => void;
-};
+  children: ReactNode
+  onClick?: () => void
+}
 
-export default function AuthButton({ children, onClick, type = "submit" }: Props) {
+export default function AuthButton({
+  children,
+  onClick,
+  type = 'submit',
+}: Props) {
   return (
     <button
       type={type}
@@ -17,5 +21,5 @@ export default function AuthButton({ children, onClick, type = "submit" }: Props
     >
       {children}
     </button>
-  );
+  )
 }

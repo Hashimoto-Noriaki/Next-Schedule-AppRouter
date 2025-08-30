@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import InputForm  from '../../components/atoms/InputForm'
+import InputForm from '../../components/atoms/InputForm'
 import AuthButton from '../../components/atoms/AuthButton'
 
 export default function LoginPage() {
