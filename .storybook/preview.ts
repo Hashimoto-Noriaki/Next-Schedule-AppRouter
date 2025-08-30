@@ -6,7 +6,7 @@ import '../src/app/globals.css'
 
 const preview: Preview = {
   parameters: {
-    nextjs: { appDirectory: true },   // App Router を明示
+    nextjs: { appDirectory: true }, // App Router を明示
     actions: { argTypesRegex: '^on.*' },
     controls: { expanded: true },
     layout: 'centered',
